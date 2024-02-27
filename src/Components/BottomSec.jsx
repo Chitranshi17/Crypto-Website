@@ -21,6 +21,15 @@ const BottomSec = () => {
     dispatch(TrendingCoins());
   }, []);
 
+
+  if(!coinData){
+    return (
+      <Box sx={{ display: 'flex', width : "100%" , height : "30rem" , alignItems : "center" , justifyContent : "center"}}>
+      <CircularProgress />
+    </Box>
+    )
+  }
+
   if (isError) {
     return <Typography color="error">Something Went Wrong !!</Typography>;
   }

@@ -44,7 +44,7 @@ const SearchCoinCard = ({ coin }) => {
             width: "48%",
             height: "50%",
             borderRadius: "50%",
-            padding: "2rem"s}}
+            padding: "2rem"}}
             image={large ? large : NoImg }
           />
           <CardContent>
